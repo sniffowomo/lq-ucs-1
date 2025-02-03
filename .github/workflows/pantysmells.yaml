@@ -1,4 +1,4 @@
-name: CI/CD Pipeline for .NET Console App - ConsoleApp1
+name: CI/CD Pipeline Build For Windows and Linux 
 
 on:
   push:
