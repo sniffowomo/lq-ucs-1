@@ -1,0 +1,14 @@
+Generating mnemonic from provided entropy...
+Successfully generated a new mnemonic.
+Phrase:
+lend impulse wall winter stuff topic diet hospital select program rose myself
+
+Accounts:
+- Account 0:
+Address:     0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f
+Private key: 0x4a0ac9ea62aa19e41bac0cb732380fb82e878cf07b21be1990f9ab46c4ec77ef
+
+- Account 1:
+Address:     0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73
+Private key: 0x0737919d8f422759424e0eea06092245d771387fa7c42fb553af01d4eb7dbf6a
+
