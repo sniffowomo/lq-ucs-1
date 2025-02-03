@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tez1", "tez1\tez1.csproj", "{1C62361C-C889-4176-A6DE-26381DB2A96F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "t2", "t2\t2.csproj", "{3AB6EE18-58C9-4965-B0B3-F780CB0BFF68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C62361C-C889-4176-A6DE-26381DB2A96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C62361C-C889-4176-A6DE-26381DB2A96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C62361C-C889-4176-A6DE-26381DB2A96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C62361C-C889-4176-A6DE-26381DB2A96F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB6EE18-58C9-4965-B0B3-F780CB0BFF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB6EE18-58C9-4965-B0B3-F780CB0BFF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB6EE18-58C9-4965-B0B3-F780CB0BFF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB6EE18-58C9-4965-B0B3-F780CB0BFF68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
