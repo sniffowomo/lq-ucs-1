@@ -122,4 +122,7 @@ else
     echo -e "${RED}[!] Both Windows and Linux builds failed. ${NC}"
 fi
 
+header "List Executable Files"
+find . -type f -name "*.exe" -exec ls -lh {} \; 2>/dev/null
+
 echo -e ""
