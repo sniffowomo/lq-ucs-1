@@ -24,7 +24,8 @@ nu_pkg_install() {
     headerz "Installing NuGet Packages"
     echo -e "${YELLOW}Installing NuGet Packages..."
     echo -e "Pastel = Color Terminal"
-    echo -e "Newtonsoft.Json = Serialize JSON${NC}"
+    echo -e "Newtonsoft.Json = Serialize JSON$"
+    echo -e "LiteDB = Embedded DB written in C#${NC}"
 
     PACKAGES=(
         "Newtonsoft.Json --version 13.0.3"
