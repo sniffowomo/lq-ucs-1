@@ -7,6 +7,9 @@ import dotenv from 'dotenv'
 dotenv.config()
 const { ALK, WA1K, WA2 } = process.env
 
+if (!WA1K) {
+  throw new Error('WA1K is not defined')
+}
 let wallet = new Wallet(WA1K)
 
 async function send_sepolia() {
