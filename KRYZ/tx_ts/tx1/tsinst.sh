@@ -25,9 +25,12 @@ bun_addz() {
 
     PKG="chalk"
     CO1="bun add ${PKG}"
+    CO2="bun pm ls"
 
     echo -e "Installing ${PKG}..."
     eval "$CO1"
+    echo -e "Listing Packages..."
+    eval "$CO2"
 }
 
 # Execution
