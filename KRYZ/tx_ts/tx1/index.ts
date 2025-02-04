@@ -10,3 +10,6 @@ async function main() {
   header('Send Holeksy')
   await send_holeksy()
 }
+
+// Calling the function
+main()
