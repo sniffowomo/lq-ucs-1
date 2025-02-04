@@ -87,17 +87,21 @@ ca_trx() {
 
     # Sending the transaction
 
-    echo -e "${YELLOW}Sending Transaction to sepolia${NC}"
+    # Sending the transaction to Sepolia
+    echo -e "${YELLOW}Sending Transaction to Sepolia${NC}"
     eval "$CO1_SEP"
-    if [ "$CO1_SEP" -ne 0 ]; then
-        echo -e "${RED}Transaction to sepolia failed${NC}"
+    EXIT_CODE=$?
+    if [ "$EXIT_CODE" -ne 0 ]; then
+        echo -e "${RED}Transaction to Sepolia failed${NC}"
         exit 1
     fi
 
-    echo -e "${YELLOW}Sending Transaction to holesky${NC}"
+    # Sending the transaction to Holesky
+    echo -e "${YELLOW}Sending Transaction to Holesky${NC}"
     eval "$CO1_HOL"
-    if [ "$CO1_HOL" -ne 0 ]; then
-        echo -e "${RED}Transaction to holesky failed${NC}"
+    EXIT_CODE=$?
+    if [ "$EXIT_CODE" -ne 0 ]; then
+        echo -e "${RED}Transaction to Holesky failed${NC}"
         exit 1
     fi
 
