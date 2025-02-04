@@ -2,6 +2,7 @@
 
 import chalk from 'chalk'
 import * as ora from 'ora'
+import ora from 'ora'
 
 export function header(text: string): void {
   const border = '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
