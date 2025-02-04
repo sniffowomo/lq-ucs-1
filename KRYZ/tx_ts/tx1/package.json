@@ -9,7 +9,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "alchemy-sdk": "^3.5.1",
     "chalk": "^5.4.1",
+    "dotenv": "^16.4.7",
     "ora": "^8.2.0"
   }
 }
