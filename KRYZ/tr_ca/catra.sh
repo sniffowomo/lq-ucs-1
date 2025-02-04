@@ -88,7 +88,7 @@ ca_trx() {
     # Sending the transaction
     echo -e "${YELLOW}Sending Transaction to sepolia${NC}"
     eval "$CO1_SEP"
-    if [ CO1_SEP -ne 0 ]; then
+    if [ "$CO1_SEP" -ne 0 ]; then
         echo -e "${RED}Transaction to sepolia failed${NC}"
         exit 1
     fi
