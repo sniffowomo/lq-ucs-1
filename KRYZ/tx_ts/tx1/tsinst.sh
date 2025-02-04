@@ -34,3 +34,4 @@ bun_addz() {
 }
 
 # Execution
+bun_addz
