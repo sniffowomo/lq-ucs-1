@@ -74,6 +74,7 @@ ca_trx() {
     # Walletz
     WA1="0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f"
     WA1K="0x4a0ac9ea62aa19e41bac0cb732380fb82e878cf07b21be1990f9ab46c4ec77ef"
+    WA2=""
 
     # Transactions
     CO1=""
