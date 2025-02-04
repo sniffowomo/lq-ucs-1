@@ -3,7 +3,7 @@
 import chalk from 'chalk'
 
 export function header(text: string): void {
-  const border = '========='
+  const border = '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   const styledBorder = chalk.bold.greenBright(border)
   const styledText = chalk.bold.greenBright(text)
 
