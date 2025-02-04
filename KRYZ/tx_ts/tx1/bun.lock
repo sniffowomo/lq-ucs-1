@@ -4,7 +4,6 @@
     "": {
       "name": "tx1",
       "dependencies": {
-        "@types/ora": "^3.2.0",
         "chalk": "^5.4.1",
         "ora": "^8.2.0",
       },
@@ -23,8 +22,6 @@
     "@types/chalk-animation": ["@types/chalk-animation@1.6.3", "", {}, "sha512-UdaYgzPvgOAJY+5cn3y1rQK5EpJDJOBivF5ftFxe5lNruU1/zTPkmh11iVvRd8tyzVwx92QQLaAWi1fpBAj7aw=="],
 
     "@types/node": ["@types/node@22.13.1", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew=="],
-
-    "@types/ora": ["@types/ora@3.2.0", "", { "dependencies": { "ora": "*" } }, "sha512-jll99xUKpiFbIFZSQcxm4numfsLaOWBzWNaRk3PvTSE7BPqTzzOCFmS0mQ7m8qkTfmYhuYbehTGsxkvRLPC++w=="],
 
     "@types/ws": ["@types/ws@8.5.14", "", { "dependencies": { "@types/node": "*" } }, "sha512-bd/YFLW+URhBzMXurx7lWByOu+xzU9+kb3RboOteXYDfW+tr+JZa99OyNmPINEGB/ahzKrEuc8rcv4gnpJmxTw=="],
 
