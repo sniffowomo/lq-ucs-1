@@ -5,15 +5,15 @@ const { Alchemy, Network, Wallet, Utils } = require('alchemy-sdk')
 const dotenv = require('dotenv')
 
 dotenv.config()
-const { API_KEY, PRIVATE_KEY } = process.env
+const { ALK, WA1K } = process.env
 
 const settings = {
-  apiKey: API_KEY,
+  apiKey: ALK,
   network: Network.ETH_SEPOLIA,
 }
 const alchemy = new Alchemy(settings)
 
-let wallet = new Wallet(PRIVATE_KEY)
+let wallet = new Wallet(WA1K)
 
 async function main() {
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
