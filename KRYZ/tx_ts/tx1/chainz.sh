@@ -27,7 +27,13 @@ cast_chainz() {
 
     ALC_S="https://eth-sepolia.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
     ALC_H="https://eth-holesky.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
-    CO1=""
+    CO1S="cast chain-id -r ${ALC_S}"
+    CO1H="cast chain-id -r ${ALC_H}"
+
+    echo -e "${GREEN}Getting Chain ID for Sepolia..."
+    echo -e "${CO1S}"
+    echo -e "${GREEN}Getting Chain ID for Holeksy..."
+    echo -e "${CO1H}"
 
 }
 
