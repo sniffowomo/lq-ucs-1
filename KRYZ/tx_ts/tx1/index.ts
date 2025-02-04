@@ -1,7 +1,8 @@
 // Main entry point
 
+import { header } from './src/uti'
+
 function main() {
-  clearScreen()
   header('Hello World! Smell her fars')
 }
 
