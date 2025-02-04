@@ -21,7 +21,13 @@ header() {
 }
 
 bun_addz() {
+    header "Installing Packages with bun add"
 
+    PKG="chalk"
+    CO1="bun add ${PKG}"
+
+    echo -e "Installing ${PKG}..."
+    eval "$CO1"
 }
 
 # Execution
