@@ -31,5 +31,3 @@ bun_addz() {
 }
 
 # Execution
-b1
-c1
