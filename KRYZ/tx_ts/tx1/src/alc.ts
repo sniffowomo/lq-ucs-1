@@ -1,8 +1,8 @@
 // For doing the
 // https://docs.alchemy.com/docs/how-to-send-transactions-on-ethereum
 
-const { Alchemy, Network, Wallet, Utils } = require('alchemy-sdk')
-const dotenv = require('dotenv')
+import { Alchemy, Network, Wallet, Utils } from 'alchemy-sdk'
+import dotenv from 'dotenv'
 
 dotenv.config()
 const { ALK, WA1K, WA2 } = process.env
