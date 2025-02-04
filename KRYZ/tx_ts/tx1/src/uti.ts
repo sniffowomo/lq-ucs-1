@@ -1,5 +1,6 @@
 // File is for writing functiont that make colorful headers
 
+import chalkAnimation from 'chalk-animation'
 import chalk from 'chalk'
 
 export function header(text: string): void {
@@ -15,3 +16,14 @@ ${styledBorder}
 `.trim()
   )
 }
+
+// Clear the screen with an animation
+const animation = chalkAnimation.karaoke('Clearing screen...')
+
+setTimeout(() => {
+  // Stop the animation
+  animation.stop()
+
+  // Clear the screen
+  process.stdout.write('\033c')
+}, 1000)
