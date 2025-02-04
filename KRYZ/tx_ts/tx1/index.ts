@@ -1,6 +1,6 @@
 // Main entry point
 
-import { header } from './src/uti'
+import { header, showSpinnerWithStates } from './src/uti'
 
 function main() {
   console.clear()
