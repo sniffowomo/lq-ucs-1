@@ -20,7 +20,7 @@ async function main() {
 
   let transaction = {
     to: WA2,
-    value: Utils.parseEther('0.001'),
+    value: Utils.parseUnits('0.001'),
     gasLimit: '21000',
     maxPriorityFeePerGas: Utils.parseUnits('5', 'gwei'),
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
