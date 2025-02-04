@@ -16,7 +16,7 @@ const sendval = '0.000000000000000001'
 
 let wallet = new Wallet(WA1K)
 
-async function main() {
+async function send_sepolia() {
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
   let transaction = {
@@ -34,5 +34,3 @@ async function main() {
   let tx = await alchemy.core.sendTransaction(rawTransaction)
   console.log('Sent transaction', tx)
 }
-
-main()
