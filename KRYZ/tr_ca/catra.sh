@@ -58,11 +58,11 @@ ca_wa_ba() {
         exit 1
     fi
 
-    echo -e "${GREEN}${WA1}Sepolia Balance: $w1_output_sepolia${NC}"
-    echo -e "${GREEN}${WA1}Holesky Balance: $w1_output_holesky${NC}"
+    echo -e "${GREEN}${WA1}-Sepolia Balance: $w1_output_sepolia${NC}"
+    echo -e "${GREEN}${WA1}-Holesky Balance: $w1_output_holesky${NC}"
     echo -e "-------------------------------------------------------"
-    echo -e "${GREEN}${WA2}Sepolia Balance: $w2_output_sepolia${NC}"
-    echo -e "${GREEN}${WA2}Holesky Balance: $w2_output_holesky${NC}"
+    echo -e "${GREEN}${WA2}-Sepolia Balance: $w2_output_sepolia${NC}"
+    echo -e "${GREEN}${WA2}-Holesky Balance: $w2_output_holesky${NC}"
 
     echo -e "${GREEN}Balance Check Completed${NC}"
 }
@@ -83,7 +83,7 @@ ca_trx() {
 
     # Transactions
     CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCSEP} --private-key ${WA1K}"
-    CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCHOL} --private-key ${WA1K}"
+    CO1_HOL="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCHOL} --private-key ${WA1K}"
 
     # Sending the transaction
 
