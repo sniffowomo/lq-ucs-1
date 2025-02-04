@@ -28,13 +28,3 @@ export function clearScreen() {
     process.stdout.write('\x1bc')
   }, 1000)
 }
-
-// Clear the screen with an animation
-const animation = chalkAnimation.karaoke('Clearing screen...')
-
-setTimeout(() => {
-  // Stop the animation
-  animation.stop()
-  // Clear the screen
-  process.stdout.write('\x1bc')
-}, 1000)
