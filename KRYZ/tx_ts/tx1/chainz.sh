@@ -40,7 +40,6 @@ cast_chainz() {
 
     echo -e "${YELLOW}Chain ID for Sepolia: ${SEP_ID}"
     echo -e "${YELLOW}Chain ID for Holeksy: ${HOL_ID}"
-
 }
 
 # Execution
