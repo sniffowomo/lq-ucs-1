@@ -17,30 +17,30 @@ ${styledBorder}
   )
 }
 
-export function showSpinnerWithStates(): void {
-  const spinner = ora('Loading...').start()
+export function showSpinner(text: string): ora.Ora {
+  return ora(text).start()
+}
 
-  setTimeout(() => {
-    spinner.text = 'Processing...'
-  }, 1000)
+export function updateSpinner(spinner: ora.Ora, text: string): void {
+  spinner.text = text
+}
 
-  setTimeout(() => {
-    spinner.succeed('Operation completed!')
-  }, 3000)
+export function succeedSpinner(spinner: ora.Ora, text: string): void {
+  spinner.succeed(text)
+}
 
-  setTimeout(() => {
-    spinner.fail('Operation failed!')
-  }, 5000)
+export function failSpinner(spinner: ora.Ora, text: string): void {
+  spinner.fail(text)
+}
 
-  setTimeout(() => {
-    spinner.warn('Operation warning!')
-  }, 7000)
+export function warnSpinner(spinner: ora.Ora, text: string): void {
+  spinner.warn(text)
+}
 
-  setTimeout(() => {
-    spinner.info('Operation info!')
-  }, 9000)
+export function infoSpinner(spinner: ora.Ora, text: string): void {
+  spinner.info(text)
+}
 
-  setTimeout(() => {
-    spinner.stop()
-  }, 11000)
+export function stopSpinner(spinner: ora.Ora): void {
+  spinner.stop()
 }
