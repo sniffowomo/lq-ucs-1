@@ -252,3 +252,6 @@ Explanation:
 --private-key 0xYOUR_PRIVATE_KEY → Replace with your private key (or use --ledger for hardware wallets).
 
 Send 0.00000001 ETH (10 wei) on Holesky
+cast send 0xRECEIVER_ADDRESS --value 10wei \
+  --rpc-url https://ethereum-holesky.blockpi.network/v1/rpc/public \
+  --private-key 0xYOUR_PRIVATE_KEY
