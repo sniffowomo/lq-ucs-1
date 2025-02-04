@@ -44,4 +44,4 @@ cast_chainz() {
 }
 
 # Execution
-bun_addz
+cast_chainz
