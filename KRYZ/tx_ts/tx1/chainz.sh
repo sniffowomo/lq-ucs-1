@@ -24,7 +24,7 @@ cast_chainz() {
     # Getting the chain id using the cast command
 
     header "Getting Chain ID with cast"
-    ALC_S=""
+    ALC_S="https://eth-sepolia.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
     ALC_H=""
 
 }
