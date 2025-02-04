@@ -32,8 +32,14 @@ cast_chainz() {
 
     echo -e "${GREEN}Getting Chain ID for Sepolia..."
     echo -e "${CO1S}"
+    SEP_ID=$($COl1s)
+
     echo -e "${GREEN}Getting Chain ID for Holeksy..."
     echo -e "${CO1H}"
+    HOL_ID=$($COl1H)
+
+    echo -e "${YELLOW}Chain ID for Sepolia: ${SEP_ID}"
+    echo -e "${YELLOW}Chain ID for Holeksy: ${HOL_ID}"
 
 }
 
