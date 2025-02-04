@@ -17,14 +17,19 @@ ${styledBorder}
   )
 }
 
-export function clearScreen() {
+export function clearScreen(): void {
   // Clear the screen with an animation
   const animation = chalkAnimation.karaoke('Clearing screen...')
 
+  // Start the animation
+  animation.start()
+
+  // Wait for the animation to run for a bit before clearing the screen
   setTimeout(() => {
     // Stop the animation
     animation.stop()
+
     // Clear the screen
     process.stdout.write('\x1bc')
-  }, 1000)
+  }, 3000) // Increase the timeout to 3 seconds to see the animation better
 }
