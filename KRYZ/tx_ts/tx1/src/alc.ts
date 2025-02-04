@@ -5,7 +5,7 @@ const { Alchemy, Network, Wallet, Utils } = require('alchemy-sdk')
 const dotenv = require('dotenv')
 
 dotenv.config()
-const { ALK, WA1K } = process.env
+const { ALK, WA1K, WA2 } = process.env
 
 const settings = {
   apiKey: ALK,
@@ -19,7 +19,7 @@ async function main() {
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
   let transaction = {
-    to: '0xa238b6008Bc2FBd9E386A5d4784511980cE504Cd',
+    to: WA2,
     value: Utils.parseEther('0.001'),
     gasLimit: '21000',
     maxPriorityFeePerGas: Utils.parseUnits('5', 'gwei'),
