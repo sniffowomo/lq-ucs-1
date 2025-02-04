@@ -41,7 +41,7 @@ async function send_sepolia() {
 async function send_holeksy() {
   const settings = {
     apiKey: ALK,
-    network: Network.ETH_SEPOLIA,
+    network: Network.ETH_HOLESKY,
   }
   const alchemy = new Alchemy(settings)
   const sendval = '0.000000000000000001'
