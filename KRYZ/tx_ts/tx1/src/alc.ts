@@ -38,7 +38,7 @@ async function send_sepolia() {
   console.log('Sent transaction', tx)
 }
 
-async function send_sepolia() {
+async function send_holeksy() {
   const settings = {
     apiKey: ALK,
     network: Network.ETH_SEPOLIA,
