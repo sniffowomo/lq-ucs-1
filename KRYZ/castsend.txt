@@ -244,3 +244,9 @@ Send 0.00000001 ETH (10 wei) on Sepolia
 cast send 0xRECEIVER_ADDRESS --value 10wei \
   --rpc-url https://ethereum-sepolia.blockpi.network/v1/rpc/public \
   --private-key 0xYOUR_PRIVATE_KEY
+
+Explanation:
+0xRECEIVER_ADDRESS → Replace with the recipient's Ethereum address.
+--value 10wei → Sends 10 wei (0.00000001 ETH).
+--rpc-url → Uses Sepolia's public RPC URL (replace if using Infura, Alchemy, etc.).
+--private-key 0xYOUR_PRIVATE_KEY → Replace with your private key (or use --ledger for hardware wallets).
