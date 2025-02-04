@@ -1,10 +1,12 @@
 // Main entry point
 
 import { header } from './src/uti'
+import { send_sepolia, send_holeksy } from './src/alc'
 
-function main() {
-  console.clear()
-  header('ALC TS Tx')
+async function main() {
+  header('Send Sepolia')
+  await send_sepolia()
+
+  header('Send Holeksy')
+  await send_holeksy()
 }
-
-main()
