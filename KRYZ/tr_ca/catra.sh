@@ -72,7 +72,8 @@ ca_trx() {
     header "Transaction with cast/"
 
     #ALCRPC
-    ALCRPC="https://rpc.ankr.com/eth_alchemy"
+    ALCRPCSEP="https://eth-sepolia.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
+    ALCRPCHOL=""
 
     # Walletz
     WA1="0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f"
