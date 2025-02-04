@@ -18,7 +18,7 @@ export async function send_sepolia() {
     network: Network.ETH_SEPOLIA,
   }
   const alchemy = new Alchemy(settings)
-  const sendval = '0.000000000000000001'
+  const sendval = '0.000000000000000069'
 
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
