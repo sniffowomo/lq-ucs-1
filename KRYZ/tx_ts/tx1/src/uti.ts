@@ -1,7 +1,7 @@
 // File is for writing functiont that make colorful headers
 
 import chalkAnimation from 'chalk-animation'
-import chalk-animation from 'chalk-animation'
+
 import chalk from 'chalk'
 
 export function header(text: string): void {
