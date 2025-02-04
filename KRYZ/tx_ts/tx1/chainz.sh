@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-# Bash Script for installing ts packages
+# Bash Script for getting chains
 clear
 
 # Colors
@@ -18,6 +18,15 @@ header() {
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
     echo -e "${PURPLE}$1${NC}"
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
+}
+
+cast_chainz() {
+    # Getting the chain id using the cast command
+
+    header "Getting Chain ID with cast"
+    ALC_S=""
+    ALC_H=""
+
 }
 
 bun_addz() {
