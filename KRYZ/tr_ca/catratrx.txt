@@ -50,3 +50,7 @@ to                      0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73
 [0;32m0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73-Sepolia Balance: 0.000000000000000003[0m
 [0;32m0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73-Holesky Balance: 0.000000000000000007[0m
 [0;32mBalance Check Completed[0m
+[H[2J[3J[0;36m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0;35mTransaction with cast/[0m
+[0;36m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0;33mSending Transaction to Sepolia[0m
