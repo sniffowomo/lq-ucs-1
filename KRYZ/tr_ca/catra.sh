@@ -76,13 +76,17 @@ ca_trx() {
     ALCRPCHOL="https://eth-holesky.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
 
     # Walletz
-    VALS="0.00000001eth"
+    VALS="1wei"
     WA1="0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f"
     WA1K="0x4a0ac9ea62aa19e41bac0cb732380fb82e878cf07b21be1990f9ab46c4ec77ef"
     WA2="0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73"
 
     # Transactions
-    CO1=""
+    CO1="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCSEP} --private-key ${WA1K}"
+
+    cast send 0xRECEIVER_ADDRESS --value 10wei \
+        --rpc-url https://ethereum-sepolia.blockpi.network/v1/rpc/public \
+        --private-key 0xYOUR_PRIVATE_KEY
 
 }
 
