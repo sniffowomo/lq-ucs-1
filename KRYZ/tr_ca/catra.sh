@@ -71,10 +71,13 @@ ca_wa_ba() {
 ca_trx() {
     header "Transaction with cast/"
 
+    #ALCRPC
+    ALCRPC="https://rpc.ankr.com/eth_alchemy"
+
     # Walletz
     WA1="0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f"
     WA1K="0x4a0ac9ea62aa19e41bac0cb732380fb82e878cf07b21be1990f9ab46c4ec77ef"
-    WA2=""
+    WA2="0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73"
 
     # Transactions
     CO1=""
