@@ -9,7 +9,6 @@
       },
       "devDependencies": {
         "@types/bun": "latest",
-        "@types/chalk-animation": "^1.6.3",
       },
       "peerDependencies": {
         "typescript": "^5.0.0",
@@ -18,8 +17,6 @@
   },
   "packages": {
     "@types/bun": ["@types/bun@1.2.2", "", { "dependencies": { "bun-types": "1.2.2" } }, "sha512-tr74gdku+AEDN5ergNiBnplr7hpDp3V1h7fqI2GcR/rsUaM39jpSeKH0TFibRvU0KwniRx5POgaYnaXbk0hU+w=="],
-
-    "@types/chalk-animation": ["@types/chalk-animation@1.6.3", "", {}, "sha512-UdaYgzPvgOAJY+5cn3y1rQK5EpJDJOBivF5ftFxe5lNruU1/zTPkmh11iVvRd8tyzVwx92QQLaAWi1fpBAj7aw=="],
 
     "@types/node": ["@types/node@22.13.1", "", { "dependencies": { "undici-types": "~6.20.0" } }, "sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew=="],
 
