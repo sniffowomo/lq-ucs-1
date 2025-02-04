@@ -82,11 +82,8 @@ ca_trx() {
     WA2="0x1eFfd0829A1891Fd87056521e12D7A1bA6152D73"
 
     # Transactions
-    CO1="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCSEP} --private-key ${WA1K}"
-
-    cast send 0xRECEIVER_ADDRESS --value 10wei \
-        --rpc-url https://ethereum-sepolia.blockpi.network/v1/rpc/public \
-        --private-key 0xYOUR_PRIVATE_KEY
+    CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCSEP} --private-key ${WA1K}"
+    CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCHOL} --private-key ${WA1K}"
 
 }
 
