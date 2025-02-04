@@ -3,5 +3,13 @@
 import chalk from 'chalk';
 
 export function header(text: string): void {
-  console.log(chalk.bold.greenBright(text));
-}
+    const border = '=========';
+    const styledBorder = chalk.bold.greenBright(border);
+    const styledText = chalk.bold.greenBright(text);
+  
+    console.log(`
+  ${styledBorder}
+  ${styledText}
+  ${styledBorder}
+    `.trim());
+  }
