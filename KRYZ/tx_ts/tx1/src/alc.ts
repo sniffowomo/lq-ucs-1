@@ -12,6 +12,7 @@ const settings = {
   network: Network.ETH_SEPOLIA,
 }
 const alchemy = new Alchemy(settings)
+const sendval = '0.000000000000000001'
 
 let wallet = new Wallet(WA1K)
 
@@ -20,7 +21,7 @@ async function main() {
 
   let transaction = {
     to: WA2,
-    value: Utils.parseUnits('0.001'),
+    value: Utils.parseUnits(sendval),
     gasLimit: '21000',
     maxPriorityFeePerGas: Utils.parseUnits('5', 'gwei'),
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
