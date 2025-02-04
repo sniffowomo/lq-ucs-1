@@ -85,6 +85,14 @@ ca_trx() {
     CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCSEP} --private-key ${WA1K}"
     CO1_SEP="cast send ${WA2} --value ${VALS} --rpc-url ${ALCRPCHOL} --private-key ${WA1K}"
 
+    # Sending the transaction
+    echo -e "${YELLOW}Sending Transaction to sepolia${NC}"
+    eval "$CO1_SEP"
+    if [ CO1_SEP -ne 0 ]; then
+        echo -e "${RED}Transaction to sepolia failed${NC}"
+        exit 1
+    fi
+
 }
 
 # Execution
