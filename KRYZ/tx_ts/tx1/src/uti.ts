@@ -1,7 +1,6 @@
 // File is for writing functiont that make colorful headers
 
 import chalkAnimation from 'chalk-animation'
-
 import chalk from 'chalk'
 
 export function header(text: string): void {
@@ -24,7 +23,6 @@ const animation = chalkAnimation.karaoke('Clearing screen...')
 setTimeout(() => {
   // Stop the animation
   animation.stop()
-
   // Clear the screen
-  process.stdout.write('\033c')
+  process.stdout.write('\x1bc')
 }, 1000)
