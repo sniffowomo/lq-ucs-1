@@ -73,7 +73,7 @@ ca_trx() {
 
     #ALCRPC
     ALCRPCSEP="https://eth-sepolia.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
-    ALCRPCHOL=""
+    ALCRPCHOL="https://eth-holesky.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
 
     # Walletz
     WA1="0xA158b0C3B87e4bCd4870Dc3c9A8199cfa1E8Fc8f"
