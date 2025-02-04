@@ -69,7 +69,7 @@ ca_wa_ba() {
 
 # CaTrans
 ca_trx() {
-    header "Transaction with cast/"
+    hea1 "Transaction with cast/"
 
     #ALCRPC
     ALCRPCSEP="https://eth-sepolia.g.alchemy.com/v2/YfG5-esHajH3FpsLvC4eMFMEFYl9Lqcg"
@@ -105,3 +105,4 @@ ca_trx() {
 
 # Execution
 ca_trx
+ca_wa_ba
