@@ -12,7 +12,7 @@ if (!WA1K) {
 }
 let wallet = new Wallet(WA1K)
 
-async function send_sepolia() {
+export async function send_sepolia() {
   const settings = {
     apiKey: ALK,
     network: Network.ETH_SEPOLIA,
@@ -38,7 +38,7 @@ async function send_sepolia() {
   console.log('Sent transaction', tx)
 }
 
-async function send_holeksy() {
+export async function send_holeksy() {
   const settings = {
     apiKey: ALK,
     network: Network.ETH_HOLESKY,
