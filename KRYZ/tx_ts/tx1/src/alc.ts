@@ -56,7 +56,7 @@ async function send_holeksy() {
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
     nonce: nonce,
     type: 2,
-    chainId: 11155111,
+    chainId: 17000,
   }
 
   let rawTransaction = await wallet.signTransaction(transaction)
