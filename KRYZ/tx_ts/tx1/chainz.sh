@@ -38,8 +38,10 @@ cast_chainz() {
     echo -e "${CO1H}"
     HOL_ID=$($CO1H)
 
-    echo -e "${YELLOW}Chain ID for Sepolia: ${SEP_ID}"
-    echo -e "${YELLOW}Chain ID for Holeksy: ${HOL_ID}"
+    echo -e "${YELLOW}-------------------------"
+    echo -e "Chain ID for Sepolia: ${SEP_ID}"
+    echo -e "Chain ID for Holeksy: ${HOL_ID}"
+    echo -e "-------------------------${NC}"
 }
 
 # Execution
