@@ -23,7 +23,7 @@ header() {
 bun_addz() {
     header "Installing Packages with bun add"
 
-    PKG="chalk ora @types/ora"
+    PKG="chalk ora"
     CO1="bun add ${PKG}"
     CO2="bun pm ls"
 
