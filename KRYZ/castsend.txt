@@ -250,3 +250,5 @@ Explanation:
 --value 10wei → Sends 10 wei (0.00000001 ETH).
 --rpc-url → Uses Sepolia's public RPC URL (replace if using Infura, Alchemy, etc.).
 --private-key 0xYOUR_PRIVATE_KEY → Replace with your private key (or use --ledger for hardware wallets).
+
+Send 0.00000001 ETH (10 wei) on Holesky
