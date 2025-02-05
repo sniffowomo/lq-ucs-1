@@ -10,7 +10,7 @@ const { ALK, WA1K, WA2 } = process.env
 export async function getTxRcpt() {
   const settings = {
     apiKey: ALK, // Replace with your Alchemy API Key.
-    network: Network.ETH_MAINNET, // Replace with your network.
+    network: Network.ETH_SEPOLIA, // Replace with your network.
   }
   const alchemy = new Alchemy(settings)
 
