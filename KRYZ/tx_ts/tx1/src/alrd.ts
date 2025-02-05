@@ -40,7 +40,7 @@ export async function getTxHistory() {
   const alchemy = new Alchemy(config)
 
   // Address to fetch transactions from (replace with your own)
-  const fromAddress = WA2
+  const fromAddress = WA1
 
   try {
     // Get all transactions for an address from block 0 and store in txns
