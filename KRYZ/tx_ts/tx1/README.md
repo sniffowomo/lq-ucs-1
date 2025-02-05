@@ -30,3 +30,4 @@ This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) i
 | [`cabal.sh`](./cabal.sh)   | bash for getting balance |
 | [`chainz.sh`](./chainz.sh) | bash for getting chains  |
 | [`tsinst.sh`](./tsinst.sh) | bash for installing TS   |
+| [`runz.sh`](./runz.sh)     | bash for installing TS   |
