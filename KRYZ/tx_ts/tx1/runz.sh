@@ -28,3 +28,4 @@ run_comm() {
 }
 
 # Execution
+run_comm
