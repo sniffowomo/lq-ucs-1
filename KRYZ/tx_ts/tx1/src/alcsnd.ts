@@ -71,7 +71,7 @@ export async function send_sepolia_private() {
   }
   const alchemy = new Alchemy(settings)
 
-  let wallet = new Wallet(PRIVATE_KEY)
+  let wallet = new Wallet(WA1K)
 
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
