@@ -3,6 +3,7 @@
 
 import { Alchemy, Network, Wallet, Utils } from 'alchemy-sdk'
 import dotenv from 'dotenv'
+import chalk from 'chalk'
 
 dotenv.config()
 const { ALK, WA1K, WA2 } = process.env
