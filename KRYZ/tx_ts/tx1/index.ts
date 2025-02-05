@@ -70,4 +70,4 @@ async function getTxRcptFunc() {
 }
 
 // Calling the function
-sendingPrivateTxs()
+getTxRcptFunc()
