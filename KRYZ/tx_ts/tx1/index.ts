@@ -6,6 +6,7 @@ import {
   sendSepoliaPrivate,
   sendHoleksyPrivate,
 } from './src/alcsnd'
+import { getTxRcpt } from './src/alrd'
 
 async function sendingtx() {
   // Spinner for sending to Sepolia
