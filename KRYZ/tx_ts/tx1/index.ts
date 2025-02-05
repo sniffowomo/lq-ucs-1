@@ -58,7 +58,7 @@ async function sendingPrivateTxs() {
 
 async function getTxRcptFunc() {
   // Spinner for sending to Sepolia
-  const sepoliaSpinner = ora('Sending to Sepolia').start()
+  const sepoliaSpinner = ora('Getting Sepolia Tx').start()
   try {
     header('Get TX Receipt')
     await getTxRcpt()
