@@ -4,6 +4,9 @@ import { Alchemy, Network, Wallet, Utils } from 'alchemy-sdk'
 import dotenv from 'dotenv'
 import chalk from 'chalk'
 
+dotenv.config()
+const { ALK, WA1K, WA2 } = process.env
+
 export async function getTxRcpt() {
   const settings = {
     apiKey: '<-- ALCHEMY API KEY -->', // Replace with your Alchemy API Key.
