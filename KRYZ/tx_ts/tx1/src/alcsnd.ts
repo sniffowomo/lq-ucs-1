@@ -66,7 +66,7 @@ export async function send_holeksy() {
 }
 
 // Sending a private transaction
-export async function send_sepolia_private() {
+export async function sendSepoliaPrivate() {
   const settings = {
     apiKey: ALK,
     network: Network.ETH_SEPOLIA, // Replace with your network.
