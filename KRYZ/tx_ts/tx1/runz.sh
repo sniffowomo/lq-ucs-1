@@ -34,7 +34,6 @@ run_comm_strip_colors() {
     CO3="tee -a txs/runcommand.txt"
     echo -e "${GREEN}Running Command: ${CO} ${NC}"
     eval "$CO1 | $CO2 | $CO3"
-
 }
 
 # Execution
