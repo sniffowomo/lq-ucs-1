@@ -13,6 +13,8 @@ export async function getTxRcpt() {
     network: Network.ETH_SEPOLIA, // Replace with your network.
   }
   const alchemy = new Alchemy(settings)
+  const txHash =
+    '0x4cc90797974e32222b5f393028ea6b412e1798336d0e05831c1f03fb18c0f9c4'
 
   alchemy.core
     .getTransactionReceipt(
