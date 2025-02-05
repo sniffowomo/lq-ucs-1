@@ -1,6 +1,13 @@
 // Using alchemy to read the tx
 
-import { Alchemy, Network, Wallet, Utils, fromHex } from 'alchemy-sdk'
+import {
+  Alchemy,
+  Network,
+  Wallet,
+  Utils,
+  fromHex,
+  AssetTransfersCategory,
+} from 'alchemy-sdk'
 import dotenv from 'dotenv'
 import chalk from 'chalk'
 
