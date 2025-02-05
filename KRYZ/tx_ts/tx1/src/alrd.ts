@@ -16,5 +16,10 @@ export async function getTxRcpt() {
   const txHash =
     '0x4cc90797974e32222b5f393028ea6b412e1798336d0e05831c1f03fb18c0f9c4'
 
-  alchemy.core.getTransactionReceipt(txHash).then(console.log)
+  try {
+    const receipt = await alchemy.core.getTransactionReceipt(txHash)
+    console.log(receipt)
+  } catch (error) {
+    console.error('Error fetching transaction receipt:', error)
+  }
 }
