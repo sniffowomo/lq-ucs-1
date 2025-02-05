@@ -1,6 +1,6 @@
 import ora from 'ora'
 import { header } from './src/uti'
-import { send_sepolia, send_holeksy } from './src/alc'
+import { send_sepolia, send_holeksy } from './src/alcsnd'
 
 async function main() {
   // Spinner for sending to Sepolia

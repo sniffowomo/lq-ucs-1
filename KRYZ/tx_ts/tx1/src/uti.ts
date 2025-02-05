@@ -1,7 +1,6 @@
 // File is for writing functiont that make colorful headers
 
 import chalk from 'chalk'
-import ora from 'ora'
 
 export function header(text: string): void {
   const border = '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
