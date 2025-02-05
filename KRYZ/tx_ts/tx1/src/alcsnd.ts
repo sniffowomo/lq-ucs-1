@@ -76,7 +76,7 @@ export async function send_sepolia_private() {
 
   let exampleTx = {
     to: WA2,
-    value: 10,
+    value: Utils.parseUnits(sendval),
     gasLimit: '21000',
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
     nonce: nonce,
