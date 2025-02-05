@@ -62,9 +62,9 @@ async function getTxRcptFunc() {
   try {
     header('Get TX Receipt')
     await getTxRcpt()
-    sepoliaSpinner.succeed('Successfully sent to Sepolia')
+    sepoliaSpinner.succeed('Acquired TX Receipt')
   } catch (error) {
-    sepoliaSpinner.fail('Failed to send to Sepolia')
+    sepoliaSpinner.fail('Failed to get TX Receipt')
     console.error('Error sending to Sepolia:', error)
   }
 }
