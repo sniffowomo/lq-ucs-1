@@ -12,7 +12,7 @@ import dotenv from 'dotenv'
 import chalk from 'chalk'
 
 dotenv.config()
-const { ALK, WA1K, WA2 } = process.env
+const { ALK, WA1K, WA2, WA1 } = process.env
 
 export async function getTxRcpt() {
   const settings = {
