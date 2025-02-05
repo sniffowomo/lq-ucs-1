@@ -38,4 +38,4 @@ run_comm_strip_colors() {
 }
 
 # Execution
-run_comm
+run_comm_strip_colors
