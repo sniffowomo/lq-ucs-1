@@ -5,6 +5,7 @@ import {
   send_holeksy,
   sendSepoliaPrivate,
   sendHoleksyPrivate,
+  getTxHistory,
 } from './src/alcsnd'
 import { getTxRcpt } from './src/alrd'
 
