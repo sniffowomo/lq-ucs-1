@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 # Bash Script for running the actual commands
 clear
 
@@ -13,7 +14,6 @@ export WHITE='\033[0;37m'
 export NC='\033[0m' # No Color
 
 # Commands
-
 header() {
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
     echo -e "${PURPLE}$1${NC}"
@@ -39,5 +39,30 @@ run_comm_strip_colors() {
     { $CO1 2>&1; } | eval "$CO2" | eval "$CO3"
 }
 
-# Execution
-run_comm_strip_colors
+# Menu Function
+show_menu() {
+    echo -e "${CYAN}Please select an option:${NC}"
+    echo -e "1. ${GREEN}Run Command Normally${NC}"
+    echo -e "2. ${GREEN}Run Command with Stripped Colors${NC}"
+    echo -e "3. ${RED}Exit${NC}"
+}
+
+# Main Execution
+show_menu
+read -p "Enter your choice [1-3]: " choice
+case $choice in
+1)
+    run_comm
+    ;;
+2)
+    run_comm_strip_colors
+    ;;
+3)
+    echo -e "${YELLOW}Exiting...${NC}"
+    exit 0
+    ;;
+*)
+    echo -e "${RED}Invalid choice! Exiting...${NC}"
+    exit 1
+    ;;
+esac
