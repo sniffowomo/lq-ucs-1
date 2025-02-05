@@ -31,6 +31,8 @@ run_comm_strip_colors() {
     header "Executing Command with Stripped Colors"
     CO="bun run index.ts"
     echo -e "${GREEN}Running Command: ${CO} ${NC}"
+    eval "$CO" | sed "s/\x1b\[[0-9;]*m//g"
+}
 
 # Execution
 run_comm
