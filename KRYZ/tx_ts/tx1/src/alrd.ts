@@ -23,3 +23,5 @@ export async function getTxRcpt() {
     console.error('Error fetching transaction receipt:', error)
   }
 }
+
+export async function getTxHistory() {}
