@@ -56,4 +56,4 @@ async function sendingPrivateTxs() {
 }
 
 // Calling the function
-sendingtx()
+sendingPrivateTxs()
