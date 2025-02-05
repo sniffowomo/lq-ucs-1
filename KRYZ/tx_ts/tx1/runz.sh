@@ -34,8 +34,8 @@ run_comm_strip_colors() {
     CO3="tee -a txs/runcommand.txt"
     echo -e "${GREEN}Running Command: $CO1 | $CO2 | $CO3${NC}"
 
-    # Execute the command and capture the output
-    eval "$CO1" | eval "$CO2" | eval "$CO3"
+    # Execute the command in a subshell and capture the output
+    ($CO1 | eval "$CO2" | eval "$CO3")
 }
 
 # Execution
