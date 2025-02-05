@@ -1,12 +1,85 @@
+- Sending to Sepolia
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Send Sepolia Private
+✖ Failed to send to Sepolia
+Error sending to Sepolia: 233 |         }
+234 |         if (messageDetails.length) {
+235 |             message += " (" + messageDetails.join(", ") + ")";
+236 |         }
+237 |         // @TODO: Any??
+238 |         var error = new Error(message);
+                          ^
+error: bad response (status=400, headers={"date":"Wed, 05 Feb 2025 04:52:42 GMT","content-type":"application/json","content-length":"221","connection":"keep-alive","access-control-allow-origin":"*","access-control-allow-credentials":"true","vary":"Accept-Encoding","set-cookie":"_cfuvid=jIuIm5bnVvPs2JdC84rKnGyDpXdrugCkd00nFnPF1Do-1738731162252-0.0.1.1-604800000; path=/; domain=.g.alchemy.com; HttpOnly; Secure; SameSite=None","cf-ray":"90d04ae03a562e89-BOM","cf-cache-status":"DYNAMIC","x-alchemy-response-status":"400","x-alchemy-trace-id":"2c78e2024e2134fbf3cf2d4885191264","server":"cloudflare"}, body="{\"jsonrpc\":\"2.0\",\"id\":44,\"error\":{\"code\":-32600,\"message\":\"eth_sendPrivateTransaction is not available on the ETH_SEPOLIA. For more information see our docs: https://docs.alchemy.com/alchemy/documentation/apis/ethereum\"}}", requestBody="{\"method\":\"eth_sendPrivateTransaction\",\"params\":[{\"tx\":\"0x02f86a83aa36a714808504a817c800825208941effd0829a1891fd87056521e12d7a1ba6152d734580c001a046654a4823a9534ebdd4b114e2e69a362bb340ee9622b1c4439fb60d6f31856aa07d532f613761c8f548683cdb2922f3d38adefa2934cc586139acd15f75f943a2\",\"maxBlockNumber\":\"0x749ead\"}],\"id\":44,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://eth-sepolia.g.alchemy.com/v2/alcht_4feenD12mf3TN2WLxqIa9dwuxAPuW7", code=SERVER_ERROR, version=web/5.7.1)
+     reason: "bad response",
+     status: 400,
+    headers: {
+  date: "Wed, 05 Feb 2025 04:52:42 GMT",
+  "content-type": "application/json",
+  "content-length": "221",
+  connection: "keep-alive",
+  "access-control-allow-origin": "*",
+  "access-control-allow-credentials": "true",
+  vary: "Accept-Encoding",
+  "set-cookie": "_cfuvid=jIuIm5bnVvPs2JdC84rKnGyDpXdrugCkd00nFnPF1Do-1738731162252-0.0.1.1-604800000; path=/; domain=.g.alchemy.com; HttpOnly; Secure; SameSite=None",
+  "cf-ray": "90d04ae03a562e89-BOM",
+  "cf-cache-status": "DYNAMIC",
+  "x-alchemy-response-status": "400",
+  "x-alchemy-trace-id": "2c78e2024e2134fbf3cf2d4885191264",
+  server: "cloudflare",
+},
+       body: "{\"jsonrpc\":\"2.0\",\"id\":44,\"error\":{\"code\":-32600,\"message\":\"eth_sendPrivateTransaction is not available on the ETH_SEPOLIA. For more information see our docs: https://docs.alchemy.com/alchemy/documentation/apis/ethereum\"}}",
+ requestBody: "{\"method\":\"eth_sendPrivateTransaction\",\"params\":[{\"tx\":\"0x02f86a83aa36a714808504a817c800825208941effd0829a1891fd87056521e12d7a1ba6152d734580c001a046654a4823a9534ebdd4b114e2e69a362bb340ee9622b1c4439fb60d6f31856aa07d532f613761c8f548683cdb2922f3d38adefa2934cc586139acd15f75f943a2\",\"maxBlockNumber\":\"0x749ead\"}],\"id\":44,\"jsonrpc\":\"2.0\"}",
+ requestMethod: "POST",
+        url: "https://eth-sepolia.g.alchemy.com/v2/alcht_4feenD12mf3TN2WLxqIa9dwuxAPuW7",
+       code: "SERVER_ERROR"
+
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/logger/lib/index.js:238:21)
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/logger/lib/index.js:247:20)
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:275:36)
+      at step (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at fulfilled (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:5:58)
+
+- Sending to Holeksy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Send Holeksy Private
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Send Sepolia Private
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Send Holeksy Private
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Send Sepolia Private
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Send Holeksy Private
+✖ Failed to send to Holeksy
+Error sending to Holeksy: 233 |         }
+234 |         if (messageDetails.length) {
+235 |             message += " (" + messageDetails.join(", ") + ")";
+236 |         }
+237 |         // @TODO: Any??
+238 |         var error = new Error(message);
+                          ^
+error: processing response error (body="{\"jsonrpc\":\"2.0\",\"id\":44,\"error\":{\"code\":-32601,\"message\":\"method not found\",\"data\":{\"method\":\"'eth_sendPrivateTransaction' does not exist/is not available\"}}}", error={"code":-32601,"data":{"method":"'eth_sendPrivateTransaction' does not exist/is not available"}}, requestBody="{\"method\":\"eth_sendPrivateTransaction\",\"params\":[{\"tx\":\"0x02f86982426817808504a817c800825208941effd0829a1891fd87056521e12d7a1ba6152d734580c080a0174d4c313a7feb7e4fd036ed83a98db3bc3d44bf495921c0552ab1e50a86f1d8a06d8263083789cf8c10d104e2e872d58be617ba936f7b78c103841e843b3d6c7c\",\"maxBlockNumber\":\"0x322d41\"}],\"id\":44,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="https://eth-holesky.g.alchemy.com/v2/alcht_4feenD12mf3TN2WLxqIa9dwuxAPuW7", code=SERVER_ERROR, version=web/5.7.1)
+     reason: "processing response error",
+       body: "{\"jsonrpc\":\"2.0\",\"id\":44,\"error\":{\"code\":-32601,\"message\":\"method not found\",\"data\":{\"method\":\"'eth_sendPrivateTransaction' does not exist/is not available\"}}}",
+ requestBody: "{\"method\":\"eth_sendPrivateTransaction\",\"params\":[{\"tx\":\"0x02f86982426817808504a817c800825208941effd0829a1891fd87056521e12d7a1ba6152d734580c080a0174d4c313a7feb7e4fd036ed83a98db3bc3d44bf495921c0552ab1e50a86f1d8a06d8263083789cf8c10d104e2e872d58be617ba936f7b78c103841e843b3d6c7c\",\"maxBlockNumber\":\"0x322d41\"}],\"id\":44,\"jsonrpc\":\"2.0\"}",
+ requestMethod: "POST",
+        url: "https://eth-holesky.g.alchemy.com/v2/alcht_4feenD12mf3TN2WLxqIa9dwuxAPuW7",
+       code: "SERVER_ERROR"
+
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/logger/lib/index.js:238:21)
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/logger/lib/index.js:247:20)
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:313:32)
+      at step (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at fulfilled (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:5:58)
+
+353 |  * `@ethersproject/web/src.ts/index.ts`. Used to support
+354 |  * {@link AlchemyProvider._send}, which is also copied over.
+355 |  */
+356 | function getResult(payload) {
+357 |     if (payload.error) {
+358 |         const error = new Error(payload.error.message);
+                            ^
+error: method not found
+ code: -32601,
+ data: {
+  method: "'eth_sendPrivateTransaction' does not exist/is not available",
+},
+
+      at getResult (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/alchemy-sdk/dist/cjs/alchemy-provider-00f4f49e.js:358:23)
+      at processJsonFunc (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:356:22)
+      at <anonymous> (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:288:46)
+      at step (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:33:23)
+      at fulfilled (/workspaces/lq-ucs-1/KRYZ/tx_ts/tx1/node_modules/@ethersproject/web/lib/index.js:5:58)
+
