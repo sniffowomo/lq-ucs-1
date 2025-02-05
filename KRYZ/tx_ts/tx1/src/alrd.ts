@@ -33,7 +33,7 @@ export async function getTxHistory() {
   const alchemy = new Alchemy(config)
 
   // Address to fetch transactions from (replace with your own)
-  const fromAddress = 'vitalik.eth'
+  const fromAddress = WA2
 
   // Main function to fetch all transactions for an address
 
