@@ -17,8 +17,7 @@ export async function getTxRcpt() {
     '0x4cc90797974e32222b5f393028ea6b412e1798336d0e05831c1f03fb18c0f9c4'
 
   alchemy.core
-    .getTransactionReceipt(
-      '0x68ea69fd8b5dfa589a7a983c324ab153a33356320207885a9bba84425598dcaa' // Transaction hash of the transaction for which you want to get information.
-    )
+    .getTransactionReceipt(txHash)
+    // Transaction hash of the transaction for which you want to get information.)
     .then(console.log)
 }
