@@ -90,4 +90,6 @@ export async function send_sepolia_private() {
     rawTransaction,
     (await alchemy.core.getBlockNumber()) + 1
   )
+
+  console.log('Sent private transaction', signedTx)
 }
