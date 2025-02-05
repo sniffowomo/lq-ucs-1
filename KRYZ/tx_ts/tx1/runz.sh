@@ -33,7 +33,9 @@ run_comm_strip_colors() {
     CO2="awk '{ gsub(/\x1b\[[0-9;]*[a-zA-Z]/, \"\"); print }'"
     CO3="tee -a txs/runcommand.txt"
     echo -e "${GREEN}Running Command: $CO1 | $CO2 | $CO3${NC}"
-    eval "$CO1 | $CO2 | $CO3"
+
+    # Execute the command and capture the output
+    eval "$CO1" | eval "$CO2" | eval "$CO3"
 }
 
 # Execution
