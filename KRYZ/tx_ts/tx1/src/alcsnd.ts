@@ -64,6 +64,7 @@ export async function send_holeksy() {
   console.log('Sent transaction', tx)
 }
 
+// Sending a private transaction
 export async function send_sepolia_private() {
   const settings = {
     apiKey: ALK,
@@ -74,7 +75,7 @@ export async function send_sepolia_private() {
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
   let exampleTx = {
-    to: '0x4b9007B0BcE78cfB634032ec31Ed56adB464287b',
+    to: WA2,
     value: 10,
     gasLimit: '21000',
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
