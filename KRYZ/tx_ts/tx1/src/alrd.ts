@@ -35,8 +35,6 @@ export async function getTxHistory() {
   // Address to fetch transactions from (replace with your own)
   const fromAddress = WA2
 
-  // Main function to fetch all transactions for an address
-
   try {
     // Get all transactions for an address from block 0 and store in txns
     const txns = await alchemy.core.getAssetTransfers({
