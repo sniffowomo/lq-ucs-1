@@ -27,4 +27,4 @@ async function sendingtx() {
 }
 
 // Calling the function
-main()
+sendingtx()
