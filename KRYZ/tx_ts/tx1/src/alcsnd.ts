@@ -81,7 +81,7 @@ export async function send_sepolia_private() {
     maxFeePerGas: Utils.parseUnits('20', 'gwei'),
     nonce: nonce,
     type: 2,
-    chainId: 5,
+    chainId: 11155111,
   }
 
   let rawTransaction = await wallet.signTransaction(exampleTx)
