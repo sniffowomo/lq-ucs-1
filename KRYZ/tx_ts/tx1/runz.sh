@@ -23,7 +23,8 @@ hea1() {
 run_comm() {
     header "Executing Command Normally"
     CO="bun run index.ts"
-    echo -e "${GREEN}Running Command: ${NC}"
+    echo -e "${GREEN}Running Command: ${CO} ${NC}"
+    eval "$CO"
 }
 
 # Execution
