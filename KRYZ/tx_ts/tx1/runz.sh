@@ -49,7 +49,7 @@ show_menu() {
 
 # Main Execution
 show_menu
-read -pr "Enter your choice [1-3]: " choice
+read -p "Enter your choice [1-3]: " choice
 case $choice in
 1)
     run_comm
