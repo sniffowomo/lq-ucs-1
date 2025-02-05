@@ -27,8 +27,8 @@ export async function getTxRcpt() {
 export async function getTxHistory() {
   // Configure Alchemy SDK with API key and network
   const config = {
-    apiKey: 'demo',
-    network: Network.ETH_MAINNET,
+    apiKey: ALK,
+    network: Network.ETH_SEPOLIA,
   }
   const alchemy = new Alchemy(config)
 
