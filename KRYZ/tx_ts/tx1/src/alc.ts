@@ -12,13 +12,14 @@ if (!WA1K) {
 }
 let wallet = new Wallet(WA1K)
 
+const sendval = '0.000000000000000069'
+
 export async function send_sepolia() {
   const settings = {
     apiKey: ALK,
     network: Network.ETH_SEPOLIA,
   }
   const alchemy = new Alchemy(settings)
-  const sendval = '0.000000000000000069'
 
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 
@@ -44,7 +45,6 @@ export async function send_holeksy() {
     network: Network.ETH_HOLESKY,
   }
   const alchemy = new Alchemy(settings)
-  const sendval = '0.000000000000000069'
 
   const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
 

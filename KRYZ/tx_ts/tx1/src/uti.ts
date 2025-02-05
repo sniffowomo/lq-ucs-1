@@ -4,7 +4,7 @@ import chalk from 'chalk'
 import ora from 'ora'
 
 export function header(text: string): void {
-  const border = '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+  const border = '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   const styledBorder = chalk.bold.greenBright(border)
   const styledText = chalk.bold.greenBright(text)
 
@@ -12,7 +12,6 @@ export function header(text: string): void {
     `
 ${styledBorder}
 ${styledText}
-${styledBorder}
 `.trim()
   )
 }
