@@ -29,7 +29,7 @@ run_comm() {
 
 run_comm_strip_colors() {
     header "Executing Command with Stripped Colors appending to file txs/runcommand.txt"
-    OUTPUT_FILE="txs/gettxhash.txt"
+    OUTPUT_FILE="txs/gettxhistory.txt"
     CO1="bun run index.ts"
     CO2="awk '{ gsub(/\x1b\[[0-9;]*[a-zA-Z]/, \"\"); print }'"
     CO3="tee -a ${OUTPUT_FILE}"
