@@ -29,7 +29,7 @@ run_comm() {
 
 run_comm_strip_colors() {
     header "Executing Command with Stripped Colors appending to file txs/runcommand.txt"
-    CO="bun run index.ts"
+    CO="bun run index.ts | awk '{ gsub(/\x1b\[[0-9;]*[a-zA-Z]/, ""); print }' "
     echo -e "${GREEN}Running Command: ${CO} ${NC}"
 
 }
