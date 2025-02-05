@@ -27,5 +27,10 @@ run_comm() {
     eval "$CO"
 }
 
+run_comm_strip_colors() {
+    header "Executing Command with Stripped Colors"
+    CO="bun run index.ts"
+    echo -e "${GREEN}Running Command: ${CO} ${NC}"
+
 # Execution
 run_comm
