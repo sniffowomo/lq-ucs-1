@@ -71,14 +71,14 @@ async function getTxRcptFunc() {
 
 async function getTxRcptHistory() {
   // Spinner for sending to Sepolia
-  const sepoliaSpinner = ora('Getting Sepolia Tx').start()
+  const sepoliaSpinner = ora('Getting Sepolia Tx History').start()
   try {
     header('Get TX Receipt')
     await getTxHistory()
-    sepoliaSpinner.succeed('Acquired TX Receipt')
+    sepoliaSpinner.succeed('Acquired TX History')
   } catch (error) {
-    sepoliaSpinner.fail('Failed to get TX Receipt')
-    console.error('Error sending to Sepolia:', error)
+    sepoliaSpinner.fail('Failed to get TX history')
+    console.error('Error getting history:', error)
   }
 }
 
