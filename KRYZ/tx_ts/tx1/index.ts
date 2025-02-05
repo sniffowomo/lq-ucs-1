@@ -2,7 +2,7 @@ import ora from 'ora'
 import { header } from './src/uti'
 import { send_sepolia, send_holeksy } from './src/alcsnd'
 
-async function main() {
+async function sendingtx() {
   // Spinner for sending to Sepolia
   const sepoliaSpinner = ora('Sending to Sepolia').start()
   try {
