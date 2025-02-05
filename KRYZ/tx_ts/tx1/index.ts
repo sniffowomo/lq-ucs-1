@@ -74,7 +74,7 @@ async function getTxRcptHistory() {
   const sepoliaSpinner = ora('Getting Sepolia Tx').start()
   try {
     header('Get TX Receipt')
-    await getTxRcpt()
+    await getTxHistory()
     sepoliaSpinner.succeed('Acquired TX Receipt')
   } catch (error) {
     sepoliaSpinner.fail('Failed to get TX Receipt')
@@ -83,4 +83,4 @@ async function getTxRcptHistory() {
 }
 
 // Calling the function
-getTxRcptFunc()
+getTxRcptHistory()
