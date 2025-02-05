@@ -64,4 +64,31 @@ export async function send_holeksy() {
   console.log('Sent transaction', tx)
 }
 
-export async function send_sepolia_private() {}
+export async function send_sepolia_private() {
+  const settings = {
+    apiKey: API_KEY,
+    network: Network.ETH_MAINNET, // Replace with your network.
+  }
+  const alchemy = new Alchemy(settings)
+
+  let wallet = new Wallet(PRIVATE_KEY)
+
+  const nonce = await alchemy.core.getTransactionCount(wallet.address, 'latest')
+
+  let exampleTx = {
+    to: '0x4b9007B0BcE78cfB634032ec31Ed56adB464287b',
+    value: 10,
+    gasLimit: '21000',
+    maxFeePerGas: Utils.parseUnits('20', 'gwei'),
+    nonce: nonce,
+    type: 2,
+    chainId: 5,
+  }
+
+  let rawTransaction = await wallet.signTransaction(exampleTx)
+
+  const signedTx = await alchemy.transact.sendPrivateTransaction(
+    rawTransaction,
+    (await alchemy.core.getBlockNumber()) + 1
+  )
+}
