@@ -32,7 +32,7 @@ run_comm_strip_colors() {
     OUTPUT_FILE="txs/runcommand.txt"
     CO1="bun run index.ts"
     CO2="awk '{ gsub(/\x1b\[[0-9;]*[a-zA-Z]/, \"\"); print }'"
-    CO3="tee -a txs/runcommand.txt"
+    CO3="tee -a ${OUTPUT_FILE}"
     echo -e "${GREEN}Running Command: $CO1 | $CO2 | $CO3${NC}"
 
     # Execute the command and capture both stdout and stderr
