@@ -67,7 +67,7 @@ export async function send_holeksy() {
 export async function send_sepolia_private() {
   const settings = {
     apiKey: ALK,
-    network: Network.ETH_MAINNET, // Replace with your network.
+    network: Network.ETH_SEPOLIA, // Replace with your network.
   }
   const alchemy = new Alchemy(settings)
 
