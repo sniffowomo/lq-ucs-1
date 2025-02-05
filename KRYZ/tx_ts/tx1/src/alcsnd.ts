@@ -63,3 +63,5 @@ export async function send_holeksy() {
   let tx = await alchemy.core.sendTransaction(rawTransaction)
   console.log('Sent transaction', tx)
 }
+
+export async function send_sepolia_private() {}
