@@ -56,12 +56,12 @@ async function sendingPrivateTxs() {
   }
 }
 
-async function getTxRcpt() {
+async function getTxRcptFunc() {
   // Spinner for sending to Sepolia
   const sepoliaSpinner = ora('Sending to Sepolia').start()
   try {
     header('Send Sepolia Private')
-    await sendSepoliaPrivate()
+    await getTxRcpt()
     sepoliaSpinner.succeed('Successfully sent to Sepolia')
   } catch (error) {
     sepoliaSpinner.fail('Failed to send to Sepolia')
