@@ -14,7 +14,7 @@ export NC='\033[0m' # No Color
 
 # Commands
 
-hea1() {
+header() {
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
     echo -e "${PURPLE}$1${NC}"
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
