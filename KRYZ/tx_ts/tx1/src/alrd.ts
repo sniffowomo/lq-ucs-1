@@ -47,7 +47,13 @@ export async function getTxHistory() {
     const txns = await alchemy.core.getAssetTransfers({
       fromBlock: '0x0',
       fromAddress: fromAddress,
-      category: ['external', 'internal', 'erc20', 'erc721', 'erc1155'],
+      category: [
+        AssetTransfersCategory.EXTERNAL,
+        AssetTransfersCategory.INTERNAL,
+        AssetTransfersCategory.ERC20,
+        AssetTransfersCategory.ERC721,
+        AssetTransfersCategory.ERC1155,
+      ],
     })
 
     console.log(txns)
